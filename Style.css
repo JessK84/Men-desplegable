@@ -1,0 +1,82 @@
+/* ------------------- HEADER ----------------------
+------------------------------------------------*/
+
+body {
+    margin: 0px;
+    background-color: darksalmon;
+}
+
+header {
+    position: fixed;
+    width:100%;
+}
+
+.container {
+    list-style: none;
+    margin: 0px auto;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans';
+    box-shadow: 0px 0px 20px 0px rgb(95, 93, 93);
+}
+/* ------------------- MNEÚ 1 ----------------------
+------------------------------------------------*/
+
+.nav {
+    position: relative;
+}
+.nav:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sub-nav {
+    list-style: none;
+    line-height: 26px;
+    position: relative;
+    padding: 10px;
+
+}
+.container-second {
+    width: 120px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    padding: 0px;
+    display: none;
+    box-shadow: 0px 0px 20px 0px rgb(187, 184, 184); 
+}
+
+.nav:hover .container-second {
+    display: block;
+}
+.sub-nav:hover {
+    background-color: rgb(219, 212, 212);
+}
+
+/* ------------------- sub sub menú ----------------------
+------------------------------------------------*/
+.sub-container {
+    list-style: none;
+    position: absolute;
+    top: 5px;
+    left: 115px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgb(187, 184, 184);
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    text-align: center;
+}
+
+.sub-nav:hover .sub-container {
+    display: block;
+}
+.sub-menu:hover {
+    background-color: rgb(219, 212, 212);
+}
