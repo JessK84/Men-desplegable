@@ -13,8 +13,9 @@ header {
 
 .container {
     list-style: none;
+    line-height: 20px;
     margin: 0px auto;
-    padding: 25px;
+    padding: 0px 25px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -25,15 +26,17 @@ header {
 /* ------------------- MNEÚ 1 ----------------------
 ------------------------------------------------*/
 
-.nav {
+.menu {
     position: relative;
+    padding: 25px;
 }
-.nav:hover {
+
+.menu:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.sub-nav {
+.sub-menu {
     list-style: none;
     line-height: 26px;
     position: relative;
@@ -44,16 +47,17 @@ header {
     width: 120px;
     background-color: white;
     position: absolute;
-    top: 20px;
+    top: 55px;
+    left: 40px;
     padding: 0px;
     display: none;
     box-shadow: 0px 0px 20px 0px rgb(187, 184, 184); 
 }
 
-.nav:hover .container-second {
+.menu:hover .container-second {
     display: block;
 }
-.sub-nav:hover {
+.sub-menu:hover {
     background-color: white;
     box-shadow: 0px 0px 20px 0px rgb(187, 184, 184);
 }
@@ -75,10 +79,10 @@ header {
     text-align: center;
 }
 
-.sub-nav:hover .sub-container {
+.sub-menu:hover .sub-container {
     display: block;
 }
-.sub-menu:hover {
+.sub-submenu:hover {
     background-color: white;
     box-shadow: 0px 0px 20px 0px rgb(187, 184, 184);
 }
